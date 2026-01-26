@@ -1,4 +1,4 @@
-package com.aiyun.playai.DJL;
+package com.aiyun.playai.djl;
 
 import ai.djl.MalformedModelException;
 import ai.djl.huggingface.tokenizers.Encoding;
