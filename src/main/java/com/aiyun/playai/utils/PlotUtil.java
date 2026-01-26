@@ -1,4 +1,4 @@
-package com.aiyuns.utils;
+package com.aiyun.playai.utils;
 
 import java.awt.*;
 import java.util.ArrayList;
