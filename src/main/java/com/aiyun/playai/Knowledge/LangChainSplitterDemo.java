@@ -1,4 +1,4 @@
-package com.aiyuns.Knowledge;
+package com.aiyun.playai.Knowledge;
 
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.DocumentSplitter;
