@@ -42,6 +42,7 @@
     <djl.version>0.36.0</djl.version>
     <langchain4j.version>1.10.0</langchain4j.version>
     <maven.minimum.version>3.3.1</maven.minimum.version>
+    <calcite.version>1.41.0</calcite.version>
   </properties>
 
   <repositories>
@@ -251,6 +252,16 @@
       <groupId>dev.langchain4j</groupId>
       <artifactId>langchain4j-embeddings-all-minilm-l6-v2-q</artifactId>
       <version>1.10.0-beta18</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.calcite</groupId>
+      <artifactId>calcite-core</artifactId>
+      <version>${calcite.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.calcite</groupId>
+      <artifactId>calcite-linq4j</artifactId>
+      <version>${calcite.version}</version>
     </dependency>
   </dependencies>
 

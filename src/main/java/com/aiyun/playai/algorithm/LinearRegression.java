@@ -1,4 +1,4 @@
-package com.aiyun.playai.Algorithm;
+package com.aiyun.playai.algorithm;
 
 import java.awt.*;
 import java.io.File;
