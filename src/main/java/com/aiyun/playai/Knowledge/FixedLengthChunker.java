@@ -1,4 +1,4 @@
-package com.aiyuns.Knowledge;
+package com.aiyun.playai.Knowledge;
 
 import java.util.ArrayList;
 import java.util.List;

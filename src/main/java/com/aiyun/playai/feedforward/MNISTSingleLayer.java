@@ -1,4 +1,4 @@
-package com.aiyuns.quickstart.modeling.feedforward;
+package com.aiyun.playai.feedforward;
 
 import org.deeplearning4j.datasets.iterator.impl.MnistDataSetIterator;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;

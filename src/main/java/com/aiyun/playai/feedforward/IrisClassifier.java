@@ -1,4 +1,4 @@
-package com.aiyuns.quickstart.modeling.feedforward;
+package com.aiyun.playai.feedforward;
 
 import com.aiyuns.utils.DownloaderUtility;
 import java.io.File;
