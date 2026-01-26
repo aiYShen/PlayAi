@@ -1,4 +1,4 @@
-package com.aiyuns.utils;
+package com.aiyun.playai.utils;
 
 import java.io.*;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;

@@ -1,7 +1,7 @@
 package com.aiyun.playai.feedforward;
 
-import com.aiyuns.utils.DownloaderUtility;
-import com.aiyuns.utils.PlotUtil;
+import com.aiyun.playai.utils.DownloaderUtility;
+import com.aiyun.playai.utils.PlotUtil;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.datavec.api.records.reader.RecordReader;

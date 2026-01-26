@@ -1,6 +1,6 @@
 package com.aiyun.playai.feedforward;
 
-import com.aiyuns.utils.DownloaderUtility;
+import com.aiyun.playai.utils.DownloaderUtility;
 import java.io.File;
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
