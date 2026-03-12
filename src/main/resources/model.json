@@ -6,7 +6,7 @@
       "name": "MYSQL_DATA",
       "type": "jdbc",
       "jdbcDriver": "com.mysql.cj.jdbc.Driver",
-      "jdbcUrl": "jdbc:mysql://localhost:3306/users_db",
+      "jdbcUrl": "jdbc:mysql://localhost:3306/tinkerplay",
       "jdbcUser": "root",
       "jdbcPassword": "password"
     },
