@@ -1,3 +1,8 @@
+server:
+  port: 7878
+  servlet:
+    context-path: /ai
+
 spring:
   application:
     name: PlayAi
