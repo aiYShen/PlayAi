@@ -6,11 +6,11 @@
 
 #### 架构
 
-JAVA_25 + springboot_4.1.0 + Apache Maven Daemon (mvnd) 1.0.3 构建
+JAVA_25 + SpringBoot_4.1.0 + SpringAi_2.0.0-M3 + Apache Maven Daemon (mvnd) 1.0.3 构建
 
 #### 配置文件application.yml说明
 
-1. 
+1. SpringAi
 2. 
 3. 
 4. 
