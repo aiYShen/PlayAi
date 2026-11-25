@@ -7,20 +7,37 @@ spring:
   application:
     name: PlayAi
   datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: StrongPassword123
+        reset-enable: false
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+
     dynamic:
       public-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKFISKaDm3ovtkUnDvqjPRffgRGBzYoFvyM9emFMmqHljorhHh3oSG+zi7602spYRZhPYGP7OT/dB0I7A2q7+PkCAwEAAQ==
       enabled: true
       primary: pgsql
       strict: true
       grace-destroy: false
-      type: com.zaxxer.hikari.HikariDataSource
-      hikari:
-        minimum-idle: 1
-        maximum-pool-size: 2
-        connection-timeout: 30000
-        validation-timeout: 5000
-        max-lifetime: 1800000
-        idle-timeout: 600000
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        initial-size: 1
+        min-idle: 1
+        max-active: 2
+        max-wait: 60000
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        test-while-idle: true
+        test-on-borrow: false
+        test-on-return: false
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
       datasource:
         pgsql:
           url: jdbc:postgresql://localhost:16543/public
