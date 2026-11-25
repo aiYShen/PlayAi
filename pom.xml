@@ -14,19 +14,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>PlayAi</name>
   <description>PlayAi</description>
-  <url/>
-  <licenses>
-    <license/>
-  </licenses>
-  <developers>
-    <developer/>
-  </developers>
-  <scm>
-    <connection/>
-    <developerConnection/>
-    <tag/>
-    <url/>
-  </scm>
+
   <properties>
     <java.version>25</java.version>
     <dl4j-master.version>1.0.0-M2.1</dl4j-master.version>
@@ -43,6 +31,7 @@
     <langchain4j.version>1.10.0</langchain4j.version>
     <maven.minimum.version>3.3.1</maven.minimum.version>
     <calcite.version>1.41.0</calcite.version>
+    <baomidou.mybatis>3.5.18.1</baomidou.mybatis>
   </properties>
 
   <repositories>
@@ -98,13 +87,9 @@
       <artifactId>spring-boot-starter-jdbc</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.baomidou</groupId>
-      <artifactId>mybatis-plus-spring-boot4-starter</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <scope>runtime</scope>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -113,14 +98,35 @@
       <optional>true</optional>
     </dependency>
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.clickhouse</groupId>
+      <artifactId>clickhouse-jdbc</artifactId>
+      <version>0.11.2</version>
+      <classifier>all</classifier>
+    </dependency>
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
+      <groupId>com.baomidou</groupId>
+      <artifactId>dynamic-datasource-spring-boot4-starter</artifactId>
+      <version>4.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-spring-boot4-starter</artifactId>
+      <version>${baomidou.mybatis}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-jsqlparser</artifactId>
+      <version>${baomidou.mybatis}</version>
     </dependency>
     <dependency>
       <groupId>org.nd4j</groupId>
@@ -275,11 +281,6 @@
       <version>1.21.0</version>
     </dependency>
     <dependency>
-      <groupId>com.mysql</groupId>
-      <artifactId>mysql-connector-j</artifactId>
-      <version>8.0.32</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-dbcp2</artifactId>
       <version>2.14.0</version>
@@ -291,7 +292,6 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <inherited>true</inherited>
-        <dependencies></dependencies>
       </plugin>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>

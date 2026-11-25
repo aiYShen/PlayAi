@@ -15,7 +15,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
  *
  * @author fvaleri
  */
-public class DataUtilities {
+public class DataUtil {
 
   /**
    * Download a remote file if it doesn't exist.

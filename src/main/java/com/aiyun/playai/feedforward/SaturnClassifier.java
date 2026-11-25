@@ -1,6 +1,6 @@
 package com.aiyun.playai.feedforward;
 
-import com.aiyun.playai.utils.DownloaderUtility;
+import com.aiyun.playai.utils.DownloaderUtil;
 import com.aiyun.playai.utils.PlotUtil;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -45,7 +45,7 @@ public class SaturnClassifier {
     int numOutputs = 2;
     int numHiddenNodes = 20;
 
-    dataLocalPath = DownloaderUtility.CLASSIFICATIONDATA.Download();
+    dataLocalPath = DownloaderUtil.CLASSIFICATIONDATA.Download();
     // 加载训练数据:
     RecordReader rr = new CSVRecordReader();
     rr.initialize(new FileSplit(new File(dataLocalPath, "saturn_data_train.csv")));

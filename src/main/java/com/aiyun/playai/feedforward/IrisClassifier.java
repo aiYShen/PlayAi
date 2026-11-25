@@ -1,6 +1,6 @@
 package com.aiyun.playai.feedforward;
 
-import com.aiyun.playai.utils.DownloaderUtility;
+import com.aiyun.playai.utils.DownloaderUtil;
 import java.io.File;
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
@@ -66,7 +66,7 @@ public class IrisClassifier {
     char delimiter = ',';
     RecordReader recordReader = new CSVRecordReader(numLinesToSkip, delimiter);
     recordReader.initialize(
-        new FileSplit(new File(DownloaderUtility.IRISDATA.Download(), "iris.txt")));
+        new FileSplit(new File(DownloaderUtil.IRISDATA.Download(), "iris.txt")));
 
     // 第二: RecordReaderDataSetIterator 负责将数据转换为 DataSet 对象，准备好用于神经网络
     int labelIndex = 4; // iris.txt CSV 中每行有 5 个值：4 个输入特征，后跟一个整数标签（类别）索引。标签是每行的第 5 个值（索引为 4）

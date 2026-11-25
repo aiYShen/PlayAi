@@ -21,7 +21,7 @@ import org.nd4j.common.resources.Downloader;
  *
  * @author susaneraly
  */
-public enum DownloaderUtility {
+public enum DownloaderUtil {
   IRISDATA("IrisData.zip", "datavec-examples", "bb49e38bb91089634d7ef37ad8e430b8", "1KB"),
   ANIMALS("animals.zip", "dl4j-examples", "1976a1f2b61191d2906e4f615246d63e", "820KB"),
   ANOMALYSEQUENCEDATA(
@@ -54,7 +54,7 @@ public enum DownloaderUtility {
    * @param md5 of zipfile
    * @param dataSize of zipfile
    */
-  DownloaderUtility(String zipFile, String dataFolder, String md5, String dataSize) {
+  DownloaderUtil(String zipFile, String dataFolder, String md5, String dataSize) {
     this(AZURE_BLOB_URL + "/" + dataFolder, zipFile, dataFolder, md5, dataSize);
   }
 
@@ -67,7 +67,7 @@ public enum DownloaderUtility {
    * @param md5 of zipfile
    * @param dataSize of zipfile
    */
-  DownloaderUtility(
+  DownloaderUtil(
       String baseURL, String zipFile, String dataFolder, String md5, String dataSize) {
     BASE_URL = baseURL;
     DATA_FOLDER = dataFolder;
