@@ -4,6 +4,8 @@ server:
     context-path: /ai
 
 spring:
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
   application:
     name: PlayAi
   datasource:
@@ -50,10 +52,10 @@ spring:
           password: ENC(U1/7CpGSPOpy/zQiRwNBtby3FKYyT4v7E7KAQ2URVnZT0evpvQVHfWRnowvd0r1p5r7++YZHNgNqtQeCojiPkA==)
           driver-class-name: com.mysql.cj.jdbc.Driver
 
-  mybatis-plus:
-    mapper-locations: classpath*:/mapper/**/*.xml
-    configuration:
-      map-underscore-to-camel-case: true
-    global-config:
-      db-config:
-        id-type: assign_id
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: assign_id
