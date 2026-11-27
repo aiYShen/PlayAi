@@ -1,4 +1,4 @@
-package com.aiyun.playai.service;
+package com.aiyun.playai.controller.service;
 
 import java.util.List;
 import java.util.Map;

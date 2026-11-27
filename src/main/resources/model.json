@@ -3,12 +3,12 @@
   "defaultSchema": "FEDERATED_DB",
   "schemas": [
     {
-      "name": "MYSQL_DATA",
+      "name": "PGSQL_DATA",
       "type": "jdbc",
-      "jdbcDriver": "com.mysql.cj.jdbc.Driver",
-      "jdbcUrl": "jdbc:mysql://localhost:3306/tinkerplay",
+      "jdbcDriver": "org.postgresql.Driver",
+      "jdbcUrl": "jdbc:postgresql://localhost:16543/public",
       "jdbcUser": "root",
-      "jdbcPassword": "password"
+      "jdbcPassword": "xxxxxxx"
     },
     {
       "name": "LOCAL_FILES",
