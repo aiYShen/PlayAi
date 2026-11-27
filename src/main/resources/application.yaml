@@ -53,7 +53,7 @@ spring:
         max-pool-prepared-statement-per-connection-size: 20
       datasource:
         pgsql:
-          url: jdbc:postgresql://localhost:16543/public
+          url: jdbc:postgresql://localhost:16543/postgres?currentSchema=public
           username: ENC(eR9pDneJ108CWNx0J6aiUKqPFZz1fKNDnXv99CdQBhyb1OmGlpmAJxvmxZuKA1Nn7Et+WUTO0avoU5w2OXfdiQ==)
           password: ENC(U1/7CpGSPOpy/zQiRwNBtby3FKYyT4v7E7KAQ2URVnZT0evpvQVHfWRnowvd0r1p5r7++YZHNgNqtQeCojiPkA==)
           driver-class-name: org.postgresql.Driver
